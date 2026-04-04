@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, * {
+  font-family: "SF Pro Display", "SF Pro Text", -apple-system,
+               BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: #F5F5F7; }
+
+:root { color-scheme: light; }
+
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  background: #000000 !important;
+}
+
+.dark .bg-bg-surface {
+  background-color: #000000 !important;
+}
+
+.dark .bg-bg-primary {
+  background-color: #060606 !important;
+}
+
+.dark .bg-bg-elevated,
+.dark .bg-white {
+  background-color: #111214 !important;
+}
+
+.dark .bg-white\/90 {
+  background-color: rgba(17, 18, 20, 0.9) !important;
+}
+
+.dark .bg-white\/50 {
+  background-color: rgba(17, 18, 20, 0.5) !important;
+}
+
+.dark .bg-white\/20 {
+  background-color: rgba(17, 18, 20, 0.2) !important;
+}
+
+.dark .text-text-primary {
+  color: #f5f5f7 !important;
+}
+
+.dark .text-text-secondary {
+  color: #b2b2bd !important;
+}
+
+.dark .text-text-tertiary,
+.dark .placeholder-text-tertiary::placeholder {
+  color: #80808a !important;
+}
+
+.dark .border-border-subtle {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+.dark .border-border-default {
+  border-color: rgba(255, 255, 255, 0.18) !important;
+}
+
+.dark .shadow-card {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.03), 0 10px 24px rgba(0, 0, 0, 0.55) !important;
+}
+
+.dark .shadow-elevated {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04), 0 16px 36px rgba(0, 0, 0, 0.65) !important;
+}
+
+.dark .shadow-modal {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.75), 0 4px 12px rgba(0, 0, 0, 0.6) !important;
+}
+
+.dark input,
+.dark textarea,
+.dark select {
+  background-color: #0f1012;
+  color: #f5f5f7;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #80808a;
+}
+
+.dark .from-\[\#F0F8FF\] {
+  --tw-gradient-from: #000000 var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.dark .to-\[\#E6F4F1\] {
+  --tw-gradient-to: #050607 var(--tw-gradient-to-position) !important;
+}
+
+.dark .bg-\[\#F0F8FA\],
+.dark .bg-\[\#F0F8FA\]\/50 {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.dark .hover\:bg-red-50:hover {
+  background-color: rgba(127, 29, 29, 0.22) !important;
+}
+
+.dark .hover\:bg-bg-surface\/60:hover {
+  background-color: rgba(255, 255, 255, 0.06) !important;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.15); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(0,0,0,0.25); }
